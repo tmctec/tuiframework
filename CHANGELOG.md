@@ -3,6 +3,12 @@
 All notable changes to this project are recorded here, newest first. The
 format follows [Keep a Changelog](https://keepachangelog.com).
 
+## [Unreleased]
+
+### Changed
+- The repository is public: `go get github.com/tmctec/tuiframework` needs no `GOPRIVATE`, and `make release-verify` fetches through the public module proxy.
+- Lip Gloss v2.1.0; CI uses actions/checkout v7.0.1, actions/setup-go v7.0.0 and golangci-lint-action v9.3.0, pinned by commit SHA.
+
 ## [0.1.0] - 2026-11-11
 
 The first tagged release.

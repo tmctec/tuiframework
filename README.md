@@ -30,12 +30,8 @@ dispatch, themes, and stacked overlays.
 ## Install
 
 ```bash
-go env -w GOPRIVATE='github.com/tmctec/*'
-go get github.com/tmctec/tuiframework@v0.1.0
+go get github.com/tmctec/tuiframework@latest
 ```
-
-The repository is private: the Go toolchain fetches it with your own git
-access, so `GOPRIVATE` keeps it away from the public module proxy.
 
 Go 1.26 or later. Layouts use [stickers/flexbox](https://github.com/tmctec/stickers).
 

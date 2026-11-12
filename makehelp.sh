@@ -249,7 +249,7 @@ cmd_release_verify() {
     local work
     work="$(mktemp -d "${TMPDIR:-/tmp}/tuiframework-release-verify.XXXXXX")"
     trap 'rm -rf "$work"' RETURN
-    export GOWORK=off GOFLAGS=-mod=mod GOPRIVATE="github.com/tmctec/*"
+    export GOWORK=off GOFLAGS=-mod=mod GOPRIVATE='' GONOSUMDB='' GONOPROXY=''
 
     # A clean clone of the tag.
     if [[ "$source" == "local" ]]; then
